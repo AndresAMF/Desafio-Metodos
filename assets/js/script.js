@@ -55,7 +55,7 @@ const check = (id) => {
     document.getElementById(id).style.backgroundColor = "green";
   } else {
     tasksArray[id].completed = false;
-    document.getElementById(id).style.backgroundColor = "gray";
+    document.getElementById(id).style.backgroundColor = "#896941";
   }
 
   let finishedTasks = tasksArray.filter((task) => task.completed == true);
@@ -70,6 +70,8 @@ const borrar = (id) => {
   }
   trContainer.innerHTML = html;
   total.innerHTML = tasksArray.length;
+  let finishedTasks = tasksArray.filter((task) => task.completed == true);
+  finished.innerHTML = finishedTasks.length;
 };
 
 document.querySelector(".buttonAdd").addEventListener("click", function () {
