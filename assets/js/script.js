@@ -12,7 +12,7 @@ const tasksArray = [
     completed: false,
   },
   {
-    description: "Pasear al perro",
+    description: "Alimentar al gato",
     completed: false,
   },
 ];
